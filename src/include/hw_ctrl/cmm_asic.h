@@ -38,6 +38,4 @@
 #include "hw_ctrl/cmm_asic_rt.h"
 #endif /* defined(RTMP_MAC) || defined(RLT_MAC) */
 
-
-
 #endif /* __ASIC_CTRL_H_ */

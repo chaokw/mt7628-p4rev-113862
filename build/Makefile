@@ -153,19 +153,6 @@ ifeq ($(CONFIG_DOT11_VHT_AC),y)
             $(SRC_DIR)/common/vht.o
 endif
 
-# WAPI
-#ifeq ($(CONFIG_WAPI_SUPPORT),y)
-#    EXTRA_CFLAGS += -DWAPI_SUPPORT
-#    ifeq ($(CONFIG_RALINK_RT3052),y)
-#        EXTRA_CFLAGS += -DSOFT_ENCRYPT
-#    endif
-#
-#  spec_objs += $(SRC_DIR)/common/wapi.o\
-#                $(SRC_DIR)/common/wapi_sms4.o\
-#		$(SRC_DIR)/common/wapi_crypt.o
-#		
-#endif
-
 # ACM
 ifeq ($(CONFIG_WMM_ACM_SUPPORT),y)
     EXTRA_CFLAGS += -DWMM_ACM_SUPPORT
